@@ -1,119 +1,57 @@
 ---
 name: design-game-mechanics
-description: Design, analyze, prototype, balance, and communicate game mechanics for digital, tabletop, physical, and hybrid games. Use when Codex needs to turn a game idea into rules and systems; diagnose boring, dominant, unstable, unfair, or confusing gameplay; design economies, feedback loops, progression, levels, tutorials, or rewards; compare emergent and authored progression structures; prepare a mechanics specification or playtest plan; or review whether mechanics express the intended theme or message.
+description: 为电子游戏、桌游、实体游戏和混合游戏设计、分析、原型验证、平衡与说明游戏机制。当需要将游戏想法转化为规则和系统，诊断无聊、主导、不稳定、不公平或难以理解的玩法，设计经济、反馈回路、成长、关卡、教程或奖励，比较涌现与编排式成长，撰写机制规格或测试计划，或检查机制是否表达预期主题时使用。
 ---
 
-# Design Game Mechanics
+# 游戏机制设计
 
-Treat mechanics as executable rules, state, resources, actions, and transitions. Focus on what players can perceive, decide, and influence.
+将机制视为可执行的规则、状态、资源、动作和状态转换。聚焦玩家能感知、能决策并能影响的内容。
 
-## Route the request
+## 选择工作路径
 
-Choose the smallest useful workflow:
+- 新概念：**界定 → 建模 → 原型 → 测试**。
+- 问题设计：**观察 → 诊断 → 改变一个变量 → 复测**。
+- 经济或平衡：阅读 [systems-and-balance.md](systems-and-balance.md)。
+- 成长、关卡、引导或叙事门槛：阅读 [progression-and-levels.md](progression-and-levels.md)。
+- 正式评审或交付物：阅读 [deliverables-and-rubrics.md](deliverables-and-rubrics.md)。
+- 知识来源和发布边界：阅读 [provenance.md](provenance.md)。
 
-- For a new concept, run **Frame -> Model -> Prototype -> Test**.
-- For a troubled design, run **Observe -> Diagnose -> Change one variable -> Retest**.
-- For economy or balance work, read [systems-and-balance.md](systems-and-balance.md).
-- For progression, levels, onboarding, or narrative gating, read [progression-and-levels.md](progression-and-levels.md).
-- For a formal critique or deliverable, read [deliverables-and-rubrics.md](deliverables-and-rubrics.md).
-- For intellectual provenance and publication limits, read [provenance.md](provenance.md).
+## 界定体验
 
-## Frame the experience
+先明确：玩家幻想与角色、应反复享受的决策、核心压力（稀缺、时机、不确定性、协作、空间控制或精通）、局长/人数/平台/受众/无障碍约束，以及可观察的成功标准。缺少关键信息时，采用可逆假设并标注。
 
-Before proposing mechanics, state:
+## 将规则写成可玩的系统
 
-1. Player fantasy and role.
-2. Repeated decision the player should enjoy.
-3. Intended tension: scarcity, timing, uncertainty, coordination, spatial control, mastery, or another pressure.
-4. Session length, player count, platform, audience, and accessibility constraints.
-5. Observable success criteria.
+给出简洁的机制地图：实体、资源、玩家动词、规则、状态、边界、结束条件与信息可见性。需要精确时按下式写核心规则：
 
-If critical context is absent, make reversible assumptions and label them.
+`当 <触发条件> 且 <前置条件> 时，<角色/系统> 使 <状态/资源> 发生 <效果>；并通过 <反馈> 告知玩家。`
 
-## Describe the rules as a playable system
+先分离机械模型与主题、表现、代码，之后再连接它们。
 
-Produce a compact mechanics map:
+## 选择结构组合
 
-- **Entities:** actors and objects that can hold state.
-- **Resources:** quantities that can be produced, stored, transformed, transferred, or consumed.
-- **Player verbs:** meaningful actions available to the player.
-- **Rules:** conditions and consequences written without implementation ambiguity.
-- **State:** variables needed to determine what happens next.
-- **Boundaries:** what enters or leaves the system.
-- **End conditions:** victory, defeat, completion, withdrawal, or persistence.
-- **Information:** what is visible, hidden, delayed, noisy, or inferred.
+把涌现和编排式成长视为连续谱，而非互斥类型。少量规则相互作用、能产生可复用局面、策略和玩家故事时偏向**涌现**；需要控制节奏、教学、叙事顺序或精选挑战时偏向**编排式成长**。可用编排门槛包住系统性玩法，或让系统结果推动成长。复杂度必须来自有意义的规则交互，而非随机事件或单纯堆规则。
 
-Write every core rule in this form when precision matters:
+## 构建有质量的决策
 
-`When <trigger> and <conditions>, <actor/system> changes <state/resource> by <effect>; communicate it through <feedback>.`
+逐项检查每个重复选择：是否至少有两个情境下可行的选项；选项是否交换不同价值；玩家能否预期结果并形成意图；新信息是否值得重新判断；技巧能否改善选择而不消除不确定性；失败是否可归因并按预期节奏恢复。除非服务于教学、节奏、表达或无障碍，否则删除永远正确的选择。
 
-Separate the mechanical model from theme, presentation, and code. Connect them later.
+## 以最低成本保真原型
 
-## Choose the structural blend
+选择能保留待验证不确定性的媒介：纸面/棋子用于回合、经济、选取和空间抽象；表格或小型模拟用于资源流、分布和长期平衡；数字原型用于时机、动作手感、网络互动或隐藏自动化；实体演绎用于社交、具身或地点互动。一次只验证一个问题，并在制作前写出测试将解锁的决策。
 
-Treat emergence and authored progression as a spectrum, not mutually exclusive genres.
+## 测试与迭代
 
-- Favor **emergence** when a small set of interacting rules should create reusable situations, strategies, and player stories.
-- Favor **authored progression** when pacing, teaching, narrative order, or curated challenges require control.
-- Combine them by placing systemic play inside authored gates, or by letting systemic outcomes create progression.
+把观察和解释分开记录：建立基线与预测；观察选择、困惑、情绪峰值、漏洞、停滞与恢复；记录结果指标和决策轨迹，而非只收集意见；找出最小可能原因；改变一个因果杠杆或一组连贯变量；按同一成功标准复测。不要只凭平均值宣称平衡；检查方差、离群值、策略多样性、先手/出生优势、滚雪球、决胜耗时和不同技术水平的表现。
 
-Check whether complexity comes from meaningful interaction among rules. Do not substitute random events or sheer rule count for emergence.
+## 说明结果
 
-## Build decision quality
+先写设计决定及理由，再按受众提供必要产物：一页机制简报、Mermaid 状态/资源图、规则规格、原型计划、参数调优表、测试协议，或按优先级排列的诊断方案。标注假设、证据、未决风险；除非用户提供游戏，均使用原创示例。
 
-For each repeated choice, test:
+## 约束
 
-- Are at least two options viable in a relevant context?
-- Do options trade off different values rather than differ only numerically?
-- Can the player anticipate consequences well enough to form intent?
-- Does new information justify reconsideration?
-- Can skill improve the choice without eliminating uncertainty?
-- Is failure attributable and recoverable at the intended cadence?
-
-Remove choices with an always-correct answer unless they serve learning, pacing, expression, or accessibility.
-
-## Prototype at the cheapest faithful level
-
-Select the medium that preserves the uncertainty under test:
-
-- Use paper or tokens for turn structure, economy, drafting, probabilities, and spatial abstraction.
-- Use a spreadsheet or small simulation for resource flows, distributions, and long-run balance.
-- Use a digital prototype for timing, motion, dexterity, feel, network interaction, or hidden automation.
-- Use physical enactment for social, embodied, or location-based interaction.
-
-Prototype one question at a time. Define the decision the test will unlock before building.
-
-## Test and iterate
-
-Capture observations separately from interpretations.
-
-1. Establish a baseline build and prediction.
-2. Observe player choices, confusion, emotional peaks, exploits, stalls, and recovery.
-3. Record outcome metrics and decision traces, not only opinions.
-4. Identify the smallest plausible cause.
-5. Change one causal lever or one coherent cluster.
-6. Retest against the same success criterion.
-
-Never claim balance from averages alone. Inspect variance, outliers, strategy diversity, first-player or spawn advantages, snowballing, time-to-resolution, and performance by player skill.
-
-## Communicate the result
-
-Lead with the design decision and its reason. Then provide only the artifacts needed by the audience, such as:
-
-- a one-page mechanics brief;
-- a state/resource diagram in Mermaid;
-- a rules specification;
-- a prototype plan;
-- a tuning table with parameter ranges;
-- a playtest protocol;
-- a diagnosis with ranked interventions.
-
-Label hypotheses, assumptions, evidence, and open risks. Use original examples unless the user supplies a game to analyze.
-
-## Guardrails
-
-- Preserve player agency; do not hide outcomes that the intended decision requires.
-- Distinguish difficulty from opacity, waiting, repetition, and punishment.
-- Treat retention and monetization as constraints, never as permission for coercive or deceptive design.
-- Consider accessibility, griefing, collusion, harassment, and exploit economies in multiplayer systems.
-- Do not reproduce copyrighted books, diagrams, tables, exercises, or extensive examples. Apply general principles and cite sources when publishing derivative analysis.
+- 保留玩家能动性；不要隐藏做出目标决策所需的结果。
+- 区分难度与晦涩、等待、重复、惩罚。
+- 留存和商业化只能作为约束，不能成为强迫或欺骗设计的理由。
+- 多人系统需考虑恶意破坏、串通、骚扰、无障碍与漏洞经济。
+- 不复制受版权保护书籍的图、表、练习、长段落或详细案例；发布衍生分析时引用来源。
