@@ -1,77 +1,25 @@
-# Progression and Level Integration
+# 成长与关卡整合
 
-## Contents
+## 成长模型
 
-1. Progression model
-2. Gates and keys
-3. Emergent progression
-4. Levels as mechanic selectors
-5. Teaching sequence
-6. Narrative and meaning
+分开处理四层：**访问**（地点、任务、模式、内容开放）、**能力**（新动词、力量、容量或知识）、**精通**（独立于角色数值的玩家技能提升）、**表达**（身份、风格、收藏或地位）。将每项奖励映射到希望鼓励的行为，避免奖励替代活动本身的决策乐趣。
 
-## Progression model
+## 门槛与钥匙
 
-Separate four layers:
+门槛阻止进展，钥匙满足其条件；钥匙可以是物品、能力、信息、关系、展示过的技能、世界状态或资源阈值。为每道门写明：玩家如何发现它、如何推断所需钥匙、钥匙是否还有其他用途、回溯带来重新理解还是只增加路程、过早或非预期顺序到达时会发生什么。硬门槛用于强顺序控制，软门槛提供带压力的选择。优先使用改变玩家阅读既有空间方式的能力，而非一次性通行证。
 
-- **Access:** places, missions, modes, or content become available.
-- **Capability:** the player gains verbs, power, capacity, or knowledge.
-- **Mastery:** player skill improves independently of character statistics.
-- **Expression:** identity, style, collection, or status changes.
+## 涌现式成长
 
-Map each reward to the behavior it should encourage. Avoid rewards that replace the activity's intrinsic decision quality.
+成长可来自系统累积，而非脚本链条。把领土、影响力、基础设施、知识、关系或生产能力等间接由游玩产生的资源视为进度。用阈值形成可辨认阶段，并确保每阶段改变决策、对手、约束或节奏，而非只膨胀数值。
 
-## Gates and keys
+## 将关卡作为机制选择器
 
-A gate blocks progress; a key satisfies its condition. Keys may be objects, abilities, information, relationships, demonstrated skills, world states, or resource thresholds.
+关卡是突出特定机制的配置：列出核心动词和交互系统；选择空间要强调的动词或关系；布置拓扑、资源、危险、敌人、时机和信息以显露它；再加入重组已掌握元素的可选挑战。确认导航和奇观不会遮蔽目标决策。重复空间母题传达一致规则，打破时要明确提示。
 
-For every gate, specify:
+## 教学顺序
 
-- how the player discovers it;
-- how the player infers the required key;
-- whether the key has uses beyond opening the gate;
-- whether backtracking creates reinterpretation or only travel time;
-- what happens when players reach it early or in an unusual order.
+按“引入 → 安全练习 → 压力 → 组合 → 变化”教学。一次引入一个有意义的新事物；要求玩家展示目标动作而非只阅读；提供快速、可归因的反馈；换情境复用机制后再增加新机制；测试玩家能否预测结果并从错误中恢复。完成教程不等于学会，需观察其是否迁移到后续非脚本情境。
 
-Use hard gates for strong sequence control and soft gates for choice with pressure. Prefer capabilities that change how existing spaces are read over single-use tokens.
+## 叙事与意义
 
-## Emergent progression
-
-Progression can arise from systemic accumulation rather than a scripted chain. Treat progress as a resource created indirectly by play: territory, influence, infrastructure, knowledge, relationships, or productive capacity.
-
-Define thresholds that create recognizable phases. Ensure each phase changes decisions, opponents, constraints, or tempo. Avoid phases that merely inflate numbers.
-
-## Levels as mechanic selectors
-
-Treat a level as a configuration that emphasizes selected mechanics.
-
-1. List the core verbs and interacting systems.
-2. Choose which verb or relationship the space should foreground.
-3. Arrange topology, resources, hazards, enemies, timing, and information to expose it.
-4. Add optional challenges that recombine mastered elements.
-5. Verify that navigation and spectacle do not obscure the intended decision.
-
-Use repeated spatial motifs to communicate consistent rules. Break them only with deliberate signaling.
-
-## Teaching sequence
-
-Teach through a loop of introduction, safe practice, pressure, combination, and variation.
-
-- Introduce one meaningful novelty at a time.
-- Require the player to demonstrate the target action, not merely read about it.
-- Provide fast, attributable feedback.
-- Reuse the mechanic under changed context before adding another.
-- Test whether players can predict outcomes and recover from errors.
-
-Tutorial completion is not proof of learning. Observe transfer into later unscripted situations.
-
-## Narrative and meaning
-
-Mechanics communicate through repeated action, incentives, constraints, and consequences. Compare the claimed theme with the behavior the system actually rewards.
-
-Review three layers:
-
-- **Operational:** what the rules literally make players do.
-- **Experiential:** what habits and emotions repetition produces.
-- **Interpretive:** what the system suggests about its subject.
-
-If mechanics represent a real-world system, state what was simplified, excluded, or assumed. Avoid treating a model as neutral or complete.
+机制通过重复动作、激励、约束和后果表达意义。比较宣称主题与系统实际奖励的行为。检查三个层面：操作层（规则让玩家实际做什么）、体验层（重复形成何种习惯和情绪）、解释层（系统对主题暗示什么）。若机制模拟现实系统，应说明简化、排除和假设；不要把模型当作中立或完整事实。
