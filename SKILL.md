@@ -11,10 +11,10 @@ description: 为电子游戏、桌游、实体游戏和混合游戏设计、分�
 
 - 新概念：**界定 → 建模 → 原型 → 测试**。
 - 问题设计：**观察 → 诊断 → 改变一个变量 → 复测**。
-- 经济或平衡：阅读 [systems-and-balance.md](systems-and-balance.md)。
-- 成长、关卡、引导或叙事门槛：阅读 [progression-and-levels.md](progression-and-levels.md)。
-- 正式评审或交付物：阅读 [deliverables-and-rubrics.md](deliverables-and-rubrics.md)。
-- 知识来源和发布边界：阅读 [provenance.md](provenance.md)。
+- 经济或平衡：阅读 [systems-and-balance.md](references/systems-and-balance.md)。
+- 成长、关卡、引导或叙事门槛：阅读 [progression-and-levels.md](references/progression-and-levels.md)。
+- 正式评审或交付物：阅读 [deliverables-and-rubrics.md](references/deliverables-and-rubrics.md)。
+- 知识来源和发布边界：阅读 [provenance.md](references/provenance.md)。
 
 ## 界定体验
 
