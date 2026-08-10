@@ -1,0 +1,4 @@
+interface:
+  display_name: "游戏机制设计师"
+  short_description: "设计、建模、平衡并评估游戏机制"
+  default_prompt: "使用 $design-game-mechanics 分析并改进我的游戏机制。"
