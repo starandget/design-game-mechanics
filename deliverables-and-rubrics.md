@@ -1,74 +1,33 @@
-# Deliverables and Review Rubrics
+# 交付物与评审量表
 
-## One-page mechanics brief
+## 一页机制简报
 
-Use this structure:
+依次写：设计意图（玩家幻想、受众、目标情绪）；核心循环（动作、反馈、更新后状态、下一决策）；实体和资源；玩家动词；不确定性；成长；失败与恢复；风险（主导策略、失控回路、晦涩、漏洞、无障碍）；以及一个可证伪的原型问题和成功标准。
 
-1. **Design intent:** player fantasy, audience, and target emotion.
-2. **Core loop:** action, feedback, updated state, and next decision.
-3. **Entities and resources:** only decision-relevant state.
-4. **Player verbs:** inputs and meaningful consequences.
-5. **Uncertainty:** randomness, hidden choice, or rule interaction.
-6. **Progression:** access, capability, mastery, and expression.
-7. **Failure and recovery:** cadence, stakes, and learning.
-8. **Risks:** dominant strategies, runaway loops, opacity, exploits, accessibility.
-9. **Prototype question:** one falsifiable question and success criterion.
+## 机制规格表
 
-## Mechanics specification table
-
-| Field | Required content |
+| 字段 | 必填内容 |
 |---|---|
-| ID | Stable rule identifier |
-| Intent | Player-facing purpose |
-| Trigger | Event that evaluates the rule |
-| Preconditions | State required for activation |
-| Inputs | Resources, entities, and values read |
-| Transition | Exact state changes |
-| Outputs | Resources, events, and signals produced |
-| Feedback | Visual, audio, haptic, textual, or social communication |
-| Edge cases | Ties, caps, missing targets, concurrency, interruption |
-| Tuning | Named parameters, defaults, and safe ranges |
-| Telemetry | Events needed to evaluate the intent |
+| ID | 稳定的规则标识 |
+| 意图 | 面向玩家的目的 |
+| 触发 | 评估规则的事件 |
+| 前置条件 | 启用所需状态 |
+| 输入 | 读取的资源、实体和值 |
+| 转换 | 精确状态变化 |
+| 输出 | 产出的资源、事件、信号 |
+| 反馈 | 视觉、听觉、触觉、文字或社交提示 |
+| 边界案例 | 平局、上限、缺失目标、并发、中断 |
+| 调优 | 参数名、默认值和安全范围 |
+| 遥测 | 验证意图所需事件 |
 
-## Diagnostic report
+## 诊断报告
 
-For each issue provide:
+每个问题给出：带证据的观察、可能的系统原因、对玩家的影响、从最小侵入到结构性改变的干预排序、预期副作用、复测指标和决策阈值。不要把偏好写成证据；数据无法区分时保留替代假设。
 
-1. Observation with evidence.
-2. Likely system cause.
-3. Player impact.
-4. Ranked interventions from least invasive to structural.
-5. Expected side effects.
-6. Retest metric and decision threshold.
+## 测试协议
 
-Do not present preference as evidence. Preserve alternative hypotheses when data cannot distinguish them.
+包括：版本、参与者画像与样本限制、测试问题和预测、场景及禁止引导、行为指标与事件定义、避免诱导的访谈提问、停止与安全条件、分析计划与改动阈值。
 
-## Playtest protocol
+## 评审量表
 
-Include:
-
-- build and rule version;
-- participant profile and sample limitations;
-- test question and prediction;
-- scenario and prohibited coaching;
-- behavioral measures and event definitions;
-- post-session prompts that avoid leading the player;
-- stopping and safety conditions;
-- analysis plan and change threshold.
-
-## Review rubric
-
-Score each dimension from 0 to 3 and explain any score below 2.
-
-- **Agency:** choices materially affect outcomes.
-- **Legibility:** players can form useful causal models.
-- **Depth:** rules support contextual strategies and counterplay.
-- **Pacing:** tension, recovery, and resolution fit the target experience.
-- **Balance:** intended options remain viable for the target population.
-- **Feedback:** consequences arrive in time and through accessible channels.
-- **Learning:** challenge grows with demonstrated understanding.
-- **Coherence:** incentives reinforce the fantasy and stated meaning.
-- **Robustness:** edge cases and adversarial behavior remain acceptable.
-- **Feasibility:** the design fits production and operational constraints.
-
-Do not sum the scores into a universal quality number. Use the profile to expose tradeoffs.
+每项打 0–3 分，低于 2 分必须解释：能动性、可理解性、深度、节奏、平衡、反馈、学习、连贯性、鲁棒性、可行性。不要把分数相加成普遍质量值；用维度画像揭示取舍。
