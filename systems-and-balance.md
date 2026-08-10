@@ -1,100 +1,37 @@
-# Systems and Balance Field Guide
+# 系统与平衡速查
 
-## Contents
+## 经济模型
 
-1. Economy model
-2. Feedback diagnosis
-3. Uncertainty and emergence
-4. Pattern vocabulary
-5. Balance workflow
-6. Multiplayer risks
+将经济视为随时间发生的资源转换：**来源**引入资源，**资源池**存储资源，**转换器**交换资源或状态，**消耗点**移除资源，**交易者**进行互惠转移，**门槛**按条件放行，**延迟/队列**拉开因果与结果的时间。为每种资源记录单位、产出速率、上限、消耗点、汇率、可见性与策略用途；不能改变决策或传达状态的资源应删除。先画出系统，再设定具体数值。
 
-## Economy model
+## 反馈回路诊断
 
-Model an economy as transformations over time.
+优势带来更多优势是强化回路；偏离会触发阻力或恢复是平衡回路。按下式描述重要回路：
 
-- **Source:** introduces a resource.
-- **Pool:** stores a resource and exposes capacity or thresholds.
-- **Converter:** exchanges one resource or state for another.
-- **Drain:** removes a resource.
-- **Trader:** performs a reciprocal transfer.
-- **Gate:** permits flow only when a condition is met.
-- **Delay/queue:** separates cause from effect in time.
+`触发 → 受影响变量 → 下游效果 → 返回路径 → 延迟 → 上限`
 
-For each resource, document its unit, source rate, storage cap, sinks, exchange rates, information visibility, and strategic purpose. Delete resources that do not alter decisions or communicate state.
+检查符号（强化/平衡）、强度、延迟、持续时间、作用范围、可见性及与其他回路的交互。强化回路可创造成长、精通回报、升级和滚雪球；平衡回路可创造稳定、节奏、翻盘空间和边际递减。两者都不天然好或坏。用上限、递增成本、衰减、暴露、可争夺性或重置点控制失控增长。
 
-Sketch the system before assigning exact numbers. A Mermaid flowchart is sufficient when a specialized simulator is unavailable.
+## 不确定性与涌现
 
-## Feedback diagnosis
+区分三种不可预测性：随机性、玩家选择（隐藏或同时意图）、规则交互（局部规则易懂但结果难预测）。随机性应用于适应、变化或不完全信息，而非无意义地抹去已获得优势。比较输入随机性（玩家可围绕它规划）与输出随机性（已结算动作被修改）。涌现应带来可复用策略、反制与令人意外但可解释的结果；规则更多不等于涌现更多。
 
-A loop is reinforcing when an advantage produces more advantage; it is balancing when deviation triggers resistance or recovery.
+## 结构模式词汇
 
-Describe each important loop with:
+将以下模式作为提示而非配方：引擎（投入提升未来产出）、摩擦（进展消耗时间/机会/位置/资源）、消耗战、升级、军备竞赛、交易、工人放置、风格强化、多回路竞争、慢周期。每选一种，都写明玩家决策、反制力量、停止条件和失效模式。
 
-`trigger -> affected variable -> downstream effect -> return path -> delay -> cap`
+## 平衡工作流
 
-Inspect:
+平衡须相对于体验目标定义，对称只是选项之一。
 
-- sign: reinforcing or balancing;
-- strength: how much one traversal changes the state;
-- delay: how quickly the consequence returns;
-- duration: temporary or persistent;
-- scope: individual, team, match, campaign, or metagame;
-- visibility: whether players can recognize and plan around it;
-- interaction: whether other loops amplify or suppress it.
+1. 明确比较对象：策略、角色、开局、队伍、资源或难度曲线。
+2. 定义可接受范围：胜率、选择率、完成时间、资源盈余、策略多样性和主观张力。
+3. 先构造确定性边界案例，再做大范围参数模拟。
+4. 用真人测试适应、信号、执行负担和乐趣。
+5. 按技术水平分层；逐步调高杠杆参数并保留版本化基线。
 
-Reinforcing loops create growth, mastery payoff, escalation, and snowballs. Balancing loops create stability, pacing, comeback space, and diminishing returns. Neither is inherently good. Control runaway behavior with caps, rising costs, decay, exposure, contestability, or reset points.
+诊断：策略是主导、流行还是更易执行？反制是否存在、可发现且来得及？早期优势是否由强化回路固化？追赶系统会否奖励故意落后？有意义的胜负已定后对局是否仍在继续？罕见事件是在创造故事还是让决策失效？
 
-## Uncertainty and emergence
+## 多人风险
 
-Use three distinct sources of unpredictability:
-
-- **Randomness:** stochastic variation.
-- **Player choice:** hidden or simultaneous intent.
-- **Rule interaction:** outcomes costly to foresee despite understandable local rules.
-
-Use randomness to create adaptation, variety, or imperfect information. Avoid using it to erase earned advantage without serving the intended fantasy. Compare input randomness, which players plan around, with output randomness, which modifies resolved actions.
-
-Test emergence by asking whether the interaction creates reusable strategies, counterplay, and surprising but explainable outcomes. More rules do not guarantee more emergence.
-
-## Pattern vocabulary
-
-Use these generic structural patterns as prompts, not recipes:
-
-- **Engine:** investment increases future production.
-- **Friction:** progress consumes time, opportunity, position, or resources.
-- **Attrition:** repeated exchange reduces capacity.
-- **Escalation:** pressure or capability rises over phases.
-- **Arms race:** competing investments reinforce each other.
-- **Trade:** parties exchange differently valued resources.
-- **Worker allocation:** scarce agents distribute effort across opportunities.
-- **Style reinforcement:** actions improve the approach that produced them.
-- **Multiple loops:** several feedback structures compete for control.
-- **Slow cycle:** delayed replenishment creates planning horizons.
-
-For each selected pattern, specify its player-facing decision, counterforce, stopping condition, and failure mode.
-
-## Balance workflow
-
-Define balance relative to an experience goal. Symmetry is only one option.
-
-1. Identify the objects being compared: strategies, characters, starts, teams, resources, or difficulty curves.
-2. Define acceptable ranges for win rate, pick rate, completion time, resource surplus, strategy diversity, and subjective tension.
-3. Create deterministic edge cases before Monte Carlo runs.
-4. Simulate broad parameter ranges to locate sensitive variables.
-5. Playtest human adaptation, signaling, execution burden, and enjoyment.
-6. Segment results by skill and experience.
-7. Tune high-leverage parameters gradually and retain versioned baselines.
-
-Useful diagnostics:
-
-- Is a strategy dominant, merely popular, or easier to execute?
-- Does the counter exist, remain discoverable, and arrive in time?
-- Is early advantage persistent because of a reinforcing loop?
-- Does a catch-up system reward deliberate underperformance?
-- Does the match continue after the meaningful outcome is already decided?
-- Are rare events driving memorable stories or invalidating decisions?
-
-## Multiplayer risks
-
-Review kingmaking, collusion, griefing, smurfing, spawn advantage, runaway leaders, elimination downtime, information leakage, network latency, and unequal communication channels. Address incentives and system permissions before relying on moderation alone.
+评审搅局、串通、恶意破坏、小号虐新、出生优势、领先者失控、淘汰等待、信息泄漏、网络延迟和不平等沟通渠道。先修正激励和系统权限，再依赖人工管理。
