@@ -1,16 +1,16 @@
-# Provenance and Publication Boundaries
+# 来源与发布边界
 
-This skill is an original procedural synthesis informed by established game-design and systems-design literature. A major conceptual influence is:
+本 Skill 是基于既有游戏设计与系统设计文献的原创流程性综合。主要概念来源之一：
 
-Ernest Adams and Joris Dormans, *Game Mechanics: Advanced Game Design*, New Riders, 2012. Chinese edition translated by Shi Xi, Posts & Telecom Press, 2014, ISBN 978-7-115-34049-8.
+Ernest Adams、Joris Dormans，《Game Mechanics: Advanced Game Design》，New Riders，2012；中文译本施曦译，《游戏机制：高级游戏设计技术》，人民邮电出版社，2014，ISBN 978-7-115-34049-8。
 
-The emergence/progression distinction originates in Jesper Juul's published game-studies work and was further developed by later authors.
+涌现/成长的区分源于 Jesper Juul 已发表的游戏研究成果，并由后续作者发展。
 
-## Publication boundaries
+## 发布边界
 
-- Do not distribute source books or scans with this skill.
-- Do not reproduce source diagrams, tables, exercises, chapter summaries, or extended passages.
-- Do not imply endorsement by the authors or publishers.
-- Use original terminology, examples, templates, and explanations where practical.
-- Cite primary sources when publishing research claims or detailed historical attribution.
-- Treat this skill as a practical design aid, not a substitute for the cited works.
+- 不随本 Skill 分发原书或扫描件。
+- 不复制原书图表、练习、章节摘要或长段落。
+- 不暗示作者或出版社背书。
+- 尽量使用原创术语、示例、模板和解释。
+- 发布研究结论或详细历史归因时引用一手来源。
+- 将本 Skill 作为实用设计辅助，不视为所引著作的替代品。
